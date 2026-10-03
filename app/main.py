@@ -27,8 +27,8 @@ def get_human_age(cat_age: int, dog_age: int) -> list:
             # After 24 years: add 1 for every N years (4 for cats, 5 for dogs)
             remaining = age - 24
             return 2 + remaining // third_rate
-    
+
     cat_human_age = convert_age(cat_age, 24, 4)
     dog_human_age = convert_age(dog_age, 24, 5)
-    
+
     return [cat_human_age, dog_human_age]
